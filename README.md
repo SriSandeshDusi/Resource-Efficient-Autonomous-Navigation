@@ -38,32 +38,52 @@ This project implements a **resource-efficient hierarchical navigation framework
 
 ## 🎬 Visual Showcase & Demonstrations
 
-### 1. System Pipeline & Neural Architecture
+### 1. Working Prototype Video
+> 📹 **Live Demonstration:**  
+> Watch the live working prototype of the autonomous QBot navigating dynamic corridors:  
+> 🔗 **[▶ Watch the Full Robot Demonstration Video on Google Drive](https://drive.google.com/file/d/1tWRFLuoQFqho07pURBEcbeqVmbtlN--_/view?usp=sharing)**
+
+---
+
+### 2. System Pipeline & Neural Architecture
 The hierarchical framework decouples long-term planning from high-frequency reactive motor control:
 
 ![Architecture Flowchart](assets/flowchart.png)
 
 ---
 
-### 2. Dynamic Evasion in Simulation
-The local NanoRL agent reactively swerves to bypass moving obstacles without losing progress toward the global $\text{Theta}^*$ waypoint:
+### 3. Global Path Comparison (Theta* vs. Traditional A*)
+Any-angle $\text{Theta}^*$ eliminates discrete grid constraints, yielding smooth Euclidean-optimal trajectories:
+
+![Path Comparison](assets/Path_Comparison.png)
+
+---
+
+### 4. Dynamic Obstacle Evasion in Simulation
+The local NanoRL agent reactively swerves to bypass moving obstacles without losing progress toward the active waypoint:
 
 ![Dynamic Evasion Sequence](assets/dynamic_evasion_sequence.png)
 
 ---
 
-### 3. Real-Time Hardware Resource Profiling
-Profiled on onboard edge hardware executing continuous 10 Hz inference:
+### 5. Real-Time Hardware Resource Profiling
+Profiled directly on the onboard NVIDIA Jetson executing continuous 10 Hz inference:
 
 ![Hardware Profiling Plot](assets/hardware_profiling_plot.png)
 
 ---
 
-### 4. Working Prototype Video
-> 📹 **Live Demonstration:**  
-> A live prototype demonstration of the autonomous QBot navigating real-world corridors was presented on **Institute Day, IIT (BHU)**.  
->
-> *(To view the full working demonstration video, see [`assets/qbot_live_demo.mp4`](assets/) or contact the authors).*
+### 6. Benchmark Comparisons
+Performance metrics and success rates across evaluation episodes:
+
+![Benchmark Results](assets/results_bar_chart.png)
+
+---
+
+### 7. Simulation vs. Real Hardware Response
+Trajectory comparison showing high-fidelity sim-to-real transfer:
+
+![Sim vs Real Comparison](assets/sim_vs_real_comparison.png)
 
 ---
 
@@ -102,26 +122,8 @@ As per the IP notice, this repository provides 4 self-contained reference files 
 
 ---
 
-## 📜 Citation
-
-If you reference this work in your research, please cite:
-
-```bibtex
-@inproceedings{dusi2026nanorl,
-  title={A Resource-Efficient Hierarchical Framework Utilizing Theta* and NanoRL for Autonomous Navigation},
-  author={Dusi, Venkata Lakshmana Sri Sandesh and Pratap, Ajay},
-  booktitle={Centre for Development of Drone Related Technologies (CDDRT)},
-  year={2026},
-  organization={IIT (BHU), Varanasi},
-  note={Under review / Patent pending}
-}
-```
-
----
-
 ## 👨‍💻 Author & Contact
 * **Dusi Venkata Lakshmana Sri Sandesh**  
   *Electrical Engineering, Indian Institute of Technology (BHU), Varanasi*  
   * **Email:** [srisandeshdusi@gmail.com](mailto:srisandeshdusi@gmail.com)  
-  * **LinkedIn:** [linkedin.com/in/srisandeshdusi](https://linkedin.com/in/srisandeshdusi)  
   * **GitHub:** [github.com/srisandeshdusi](https://github.com/srisandeshdusi)
