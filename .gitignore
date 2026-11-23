@@ -1,0 +1,24 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Checkpoints & model weights
+*.zip
+*.pt
+*.pth
+*.onnx
+checkpoints/
+models/
+
+# System and IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Large raw video dumps (recommend keeping sample video under 50MB)
+*.avi
+*.mov
+# (Allow assets/qbot_live_demo.mp4)
+!assets/qbot_live_demo.mp4
